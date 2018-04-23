@@ -1,0 +1,16 @@
+{
+  "name": "work-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ./app/**",
+    "fix": "eslint ./app/** --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^4.19.1"
+  }
+}

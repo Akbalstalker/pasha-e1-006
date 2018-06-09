@@ -2,7 +2,13 @@ const R2D2 = {};
 R2D2.E = 2.718281828459045;
 R2D2.PI = 3.14159265359;
 R2D2.pow = function pow(x, n) {
-  if (n > 1) { 
+	if (pow(x,n) == undefined) {
+		alert ('&&&&&&&')
+	}
+	else if (isNaN (x,n)){
+		alert ('Ввели бред')
+	}
+  else if (n > 1) { 
     return x * pow(x, n - 1);
   } else {
     return x;

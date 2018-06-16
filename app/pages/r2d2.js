@@ -1,70 +1,70 @@
 const R2D2 = {};
-Object.defineProperty(R2D2, "E",  {value: 2.718281828459045, configurable: false, writable: false});
-Object.defineProperty(R2D2, "PI", {value: 3.14159265359, configurable: false, writable: false});
+Object.defineProperty(R2D2, 'E', { value: 2.718281828459045, configurable: false, writable: false });
+Object.defineProperty(R2D2, 'PI', { value: 3.14159265359, configurable: false, writable: false });
 R2D2.pow = function pow(x, n) {
-	if (typeof x === 'undefined' || typeof n === 'undefined') {
-		alert ('Пропустили аргумент или вызвали метод без аргументов')
-	} else if (isNaN(x) || isNaN(n)) {
-		alert ('Ввели бред')
-	} else if (n > 1) { 
+  if (typeof x === 'undefined' || typeof n === 'undefined') {
+    alert('Пропустили аргумент или вызвали метод без аргументов');
+  } else if (isNaN(x) || isNaN(n)) {
+    alert('Ввели бред');
+  } else if (n > 1) {
     return x * pow(x, n - 1);
   } else {
     return x;
   }
 };
-R2D2.max = function max(a,b) {
-	if (typeof a === 'undefined' || typeof b === 'undefined') {
-		alert ('Пропустили аргумент или вызвали метод без аргументов')
-	} else if (isNaN(a) || isNaN(b)) {
-		alert ('Ввели бред')
-	} else if (a > b) {
-	return a
-	} else {
-	return b
-	}
+R2D2.max = function max(a, b) {
+  if (typeof a === 'undefined' || typeof b === 'undefined') {
+    alert('Пропустили аргумент или вызвали метод без аргументов');
+  } else if (isNaN(a) || isNaN(b)) {
+    alert('Ввели бред');
+  } else if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
 };
 
-R2D2.min = function min(a,b) {
-	if (typeof a === 'undefined' || typeof b === 'undefined') {
-		alert ('Пропустили аргумент или вызвали метод без аргументов')
-	} else if (isNaN(a) || isNaN(b)) {
-		alert ('Ввели бред')
-	} else if (a < b) {
-	return a
-	} else {
-	return b
-	}
+R2D2.min = function min(a, b) {
+  if (typeof a === 'undefined' || typeof b === 'undefined') {
+    alert('Пропустили аргумент или вызвали метод без аргументов');
+  } else if (isNaN(a) || isNaN(b)) {
+    alert('Ввели бред');
+  } else if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
 };
 
-R2D2.add = function add(a,b) {
-	if (typeof a === 'undefined' || typeof b === 'undefined') {
-		alert ('Пропустили аргумент или вызвали метод без аргументов')
-	} else if (isNaN(a) || isNaN(b)) {
-		alert ('Ввели бред')
-	} else {
- return +a + +b
-}
+R2D2.add = function add(a, b) {
+  if (typeof a === 'undefined' || typeof b === 'undefined') {
+    alert('Пропустили аргумент или вызвали метод без аргументов');
+  } else if (isNaN(a) || isNaN(b)) {
+    alert('Ввели бред');
+  } else {
+    return +a + +b;
+  }
 };
 
 
 R2D2.diam = function diam(l) {
-	if (typeof l === 'undefined') {
-		alert ('Пропустили аргумент или вызвали метод без аргументов')
-	} else if (isNaN (l)) {
-		alert ('Ввели бред')
-	} else {
-	return l/3.14
-	}
+  if (typeof l === 'undefined') {
+    alert('Пропустили аргумент или вызвали метод без аргументов');
+  } else if (isNaN(l)) {
+    alert('Ввели бред');
+  } else {
+    return l / 3.14;
+  }
 };
 
-R2D2.disc = function disc(a,b,c) {
-	if (typeof a === 'undefined' || typeof b === 'undefined' || typeof c === 'undefined' ) {
-		alert ('Пропустили аргумент или вызвали метод без аргументов')
-	} else if (isNaN(a) || isNaN(b) || isNaN(c)) {
-		alert ('Ввели бред')
-	} else {
-	return b * b - 4 * a * c
-	}
+R2D2.disc = function disc(a, b, c) {
+  if (typeof a === 'undefined' || typeof b === 'undefined' || typeof c === 'undefined') {
+    alert('Пропустили аргумент или вызвали метод без аргументов');
+  } else if (isNaN(a) || isNaN(b) || isNaN(c)) {
+    alert('Ввели бред');
+  } else {
+    return b * b - 4 * a * c;
+  }
 };
 
 // Дополнительные требования

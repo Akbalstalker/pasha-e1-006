@@ -3,6 +3,7 @@ const todo = {
   addTask(title, desc, dueDate) {
     if (typeof title === 'string' && typeof desc === 'string' && typeof dueDate === 'string') {
       this.tasks.push({ title, desc, dueDate });
+// this - иначе ищеться в глобальном окне
       console.log(`Ты добавил ${title}, ${desc}, ${dueDate}.`);
     } else if (title === undefined && desc === undefined && dueDate === undefined) {
       console.log('Введите значение');
@@ -33,7 +34,6 @@ const todo = {
     });
   },
 };
-// this - иначе ищеться в глобальном окне
 
 todo.addTask('test', 'test23', '20.03.2018');
 todo.addTask('test', 'test23', '20.03.2018');

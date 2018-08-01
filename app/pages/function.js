@@ -8,11 +8,11 @@ length(5);
 
 // (3)
 const discr = (a, b, c) => b * b - 4 * a * c;
-
+discr(4, 5, 8);
 // (4)
 
 const square = num => num * num;
-
+square(4);
 // (5)
 const sumTo = (n) => {
   if (n === 1) {
@@ -30,12 +30,12 @@ const fib = (n) => {
 };
 
 // (7)
-function pow(x, n) {
+const pow = (x, n) => {
   if (n > 1) {
     return x * pow(x, n - 1);
   }
   return x;
-}
+};
 
 // (8)
 const fact = (n) => {

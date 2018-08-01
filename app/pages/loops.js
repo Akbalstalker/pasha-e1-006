@@ -11,7 +11,7 @@ while (i >= 0) {
 const login = prompt('Введите логин', 'User');
 
 if (login === 'Admin') {
-  var password = prompt('Введите пароль');
+  const password = prompt('Введите пароль');
   if (password === 'MeGaHaTsKer_666') {
     alert('Добро пожаловать, Admin');
   } else if (password === null) {
@@ -22,15 +22,15 @@ if (login === 'Admin') {
     alert('Введите корректный пароль');
   }
 } else if (login === 'User') {
-  var password = prompt('Введите пароль');
+  const password = prompt('Введите пароль');
   if (password === 'qwerty1234') {
-    	alert('Добро пожаловать, User');
+    alert('Добро пожаловать, User');
   } else if (password === null) {
-    	alert('Введите пароль');
+    alert('Введите пароль');
   } else if (password !== 'qwerty1234') {
-    	alert('Введеный пароль не правильный');
+    alert('Введеный пароль не правильный');
   } else {
-    	alert('Введите корректный пароль');
+    alert('Введите корректный пароль');
   }
 } else {
   alert('Такого логина нет в системе');

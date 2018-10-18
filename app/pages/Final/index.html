@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Pets</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css"/>
 </head>
 <body>
+
+<div class="multiple-items">
+	
+		<div><img src="img/Dog.png" alt=""></div>
+		<div><img src="img/Adult-Dog.png" alt=""></div>
+		<div><img src="img/home-сat.png" alt=""></div>
+		<div><img src="img/Dog.png" alt=""></div>
+		<div><img src="img/Adult-Dog.png" alt=""></div>
+		<div><img src="img/home-сat.png" alt=""></div>
+	
+</div>
+
 	<header class="start">
 		<div class="container">
 			
@@ -15,8 +30,8 @@
 					<a class="logo-name" href="#">Cozy house</a>
 					<p class="logo-description">Shelter for pets in Boston</p>
 				</div>
-
-				<div class="menu">
+		
+				<nav class="menu">
 					<ul class="menu-items">
 						<li class="menu-item">
 							<a class="menu-link" href="#">About the shelter</a>
@@ -31,7 +46,8 @@
 							<a class="menu-link" href="#">Contacts</a>
 						</li>
 					</ul>
-				</div>
+				</nav>
+		
 			</div>
 				<div class="row start-row">
 					<div class="col-md-6">
@@ -48,12 +64,12 @@
 	<section class="about">
 		<div class="container">
 			<div class="row about-row">
-				<div class="col-6">
+				<div class="col-lg-4">
 					<div class="pets-picture">
 						<img class="about-pets-picture" src="img/Pets.png" alt="pets">
 					</div>
 				</div>
-					<div class="col-6">
+					<div class="col-lg-6">
 						<div class="about-description">
 							<h1>About the shelter “Cozy House”</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.
@@ -69,39 +85,46 @@
 	<section class="pets">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<h2 class="pets-section-main">Our friends who
-						are looking for a house
-					</h2>
+				<div class="col-md-12">
+					<div class="pets-header">
+						<h2 class="pets-section-main">Our friends who are looking for a house </h2>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-1">
+			<div class="row pets-row">
+				<div class="col-lg-1">
 					<div class="arrow">
 						<div class="left-arrow">
 							<img src="img/Left-Arrow.png" alt="left-arrow">
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
-					<img src="img/home-сat.png" alt="card" class="card">
+
+				<div class="col-lg-3">
+					<div class="pets-section-pictures">
+						<img src="img/home-сat.png" alt="card" class="card">
+					</div>
 					<p>Kartine</p>
 					<a href="#" class="img-button">Learn More</a>
 				</div>
-				<div class="col-3">
-					<img src="img/Dog.png" alt="card" class="card">
+				<div class="col-lg-3">
+					<div class="pets-section-pictures">
+						<img src="img/Dog.png" alt="card" class="card">
+					</div>
 					<p>Jenifer</p>
 					<a href="#" class="img-button">Learn More</a>
 				</div>
-				<div class="col-3">
-					<img src="img/Adult-Dog.png" alt="card" class="card">
+				<div class="col-lg-3">
+					<div class="pets-section-pictures">
+						<img src="img/Adult-Dog.png" alt="card" class="card">
+					</div>
 					<p>Woody</p>
 					<a href="#" class="img-button">Learn More</a>
 				</div>
-				<div class="col-1">
+				<div class="col-lg-1">
 					<div class="arrow">
 						<div class="right-arrow">
-							<img src="img/Right-Arrow Hover.png" alt="right-arrow">
+							<img src="img/Right-ArrowHover.png" alt="right-arrow">
 						</div>
 					</div>
 				</div>
@@ -109,7 +132,7 @@
 
 			<div class="row-button">
 				<div class="col-12">
-					<a href="#" class="button">Get to know the rest</a>
+					<a href="#" class="button">Get to know the rest </a>
 				</div>
 			</div>
 		</div>
@@ -127,35 +150,35 @@
 
 			<div class="row help-row">
 
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="help-items">
 						<img src="img/icon/cat-food.svg" alt="">
 						<p>Pet food</p>
 					</div>
 				</div>
 
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="help-items">
 						<img src="img/icon/ambulance.svg" alt="">
 						<p>Transportation</p>
 					</div>
 				</div>
 
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="help-items">
 						<img src="img/icon/ball.svg" alt="">
 						<p>Toys</p>
 					</div>
 				</div>
 
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="help-items">
 						<img src="img/icon/bowl.svg" alt="">
 						<p>Bowls and cups</p>
 					</div>
 				</div>
 
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="help-items">
 						<img src="img/icon/shampoo.svg" alt="">
 						<p>Shampoos</p>
@@ -164,25 +187,25 @@
 			</div>
 
 			<div class="row help-row">
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="help-items">
 						<img src="img/icon/pills.svg" alt="">
 						<p>Vitamins</p>
 					</div>
 				</div>
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="help-items">
 						<img src="img/icon/syringe.svg" alt="">
 						<p>Medicines</p>
 					</div>
 				</div>
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="help-items">
 						<img src="img/icon/leash.svg" alt="">
 						<p>Collars / leashes</p>
 					</div>
 				</div>
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="help-items">
 					<img src="img/icon/Cat.svg" alt="">
 					<p>Sleeping area</p>
@@ -196,15 +219,15 @@
 	<section class="donation">
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-lg-6">
 					<div class="dog-picture">
 						<img src="img/Dog-donation.png" alt="">
 					</div>
 				</div>
-				<div class="col-5">
+				<div class="col-lg-4">
 					<div class="donation-description">
 							<h1>In addition, you can make a donation</h1>
-						<div class="col-10">
+						<div class="donation-info">
 							<p class="bank-name">Name of the bank / Type of bank account</p>
 								<div class="number">
 									<img src="img/credit-card.png" alt="credit-card">
@@ -219,44 +242,49 @@
 	</section>
 
 	<footer class="contacts">
+		<div class="adress">
 		<div class="container">
 			<div class="row">
-				<div class="col-4">	
+				<div class="col-lg-4">	
 					<div class="contacts-block">
 						<h1>
 							For questions <br>
 							and suggestions
 				 		</h1>
 				 			<div class="contacts-mail">
-				 				<img src="img/icon/envelope.svg" alt="">
+				 				<img src="img/envelope.png" alt="">
 								<a href="mailto:contact@halovietnam.com">email@shelter.com</a>
 							</div>
 							<div class="contacts-number">
-								<img src="img/icon/telephone.svg" alt="">
+								<img src="img/telephone.png" alt="">
 								<a href="tel:+84435149182">+13 674 567 75 54</a>
 							</div>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-lg-4">
 					<div class="location-block">
 						<h1>
 							We are waiting <br>
 							for your visit
 					 	</h1>
 							<div class="contacts-adress">
-								<img src="img/icon/pin.svg" alt="">
+								<img src="img/pin.png" alt="">
 								<a href="#">Boston, Central Street, 1st <br>
 								(Entrance from the store)</a>
 							</div>
 							<div class="contacts-city">	 
-								<img src="img/icon/pin.svg" alt="">
+								<img src="img/pin.png" alt="">
 								<a href="#">London, South Park, 18st</a>
 							</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		</div>
 	</footer>
-
+	<!-- jQuery library (served from Google) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>

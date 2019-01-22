@@ -191,18 +191,18 @@ div a:hover {
 }
 
 .arrow {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #f1cdb3;
 	display: flex;
   	flex-direction: column;
   	justify-content:center;
+  	margin-top: 115px;
 }
 
-.arrow {
-	margin-top: 115px;
-	/*width: 50px;
-	height: 50px;
-	border: 2px solid #f1cdb3;
+.arrow:hover {
 	background-color: #f1cdb3;
-	border-radius: 50%;*/
 }
 
 .row-button{
@@ -362,6 +362,15 @@ div a:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+	.start {
+		padding: 60px 0 130px;
+	}
+
+	.header-title {
+		text-align: center;
+	}
+
 	.pets-picture {
 		text-align: center;
 	}
@@ -374,11 +383,22 @@ div a:hover {
 		display: inline-block;
 		margin-top: 25px;
 	}
+	.menu {
+	list-style-type: none;
+	margin: 0 auto;
+	}
+	.menu-items {
+		padding: 0;
+	}
+	.start-row {
+		margin-top: 50px;
+	}
+
 }
 
 @media screen and (max-width: 425px) {
 	.menu-items {
-		display: flex;
+		/*display: flex;*/
 		flex-direction: column;
 		float: left;
 	}
@@ -387,3 +407,11 @@ div a:hover {
 		text-align: center;
 	}
 }
+
+
+
+
+/*{
+	box-shadow: 0px 2px;
+	transition: .3s ease-in-out;
+}*/

@@ -1,11 +1,13 @@
 // Задание 1
-let i = 10;
-while (i >= 0) {
-  if (i % 2 === 0) {
-    document.write(i);
-  }
-  --i;
+let k = 10;
+while (k >= 0) {
+	if (k % 2 === 0) {
+		console.log(k);
+	}
+	--k
 }
+
+
 
 // Задание 3
 const login = prompt('Введите логин', 'User');
@@ -15,11 +17,11 @@ if (login === 'Admin') {
   if (password === 'MeGaHaTsKer_666') {
     alert('Добро пожаловать, Admin');
   } else if (password === null) {
-    alert('Введите пароль');
+    alert('Отказанно в доступе');
   } else if (password !== 'MeGaHaTsKer_666') {
     alert('Введеный пароль не правильный');
   } else {
-    alert('Введите корректный пароль');
+    alert('Отказанно в доступе');
   }
 } else if (login === 'User') {
   const password = prompt('Введите пароль');
